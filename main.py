@@ -135,6 +135,22 @@ def exercice23():
     else:
         print('Validé')
 
+def exercice24():
+    print (22)
+    a = int(input("Entrez le premier nombre : "))
+    b = int(input("Entrez le deuxième nombre : "))
+
+    print(f"{a if a > b else b} est plus grand")
+
+def exercice25():
+    a = int(input("Entrez le premier nombre : "))
+    b = int(input("Entrez le deuxième nombre : "))
+
+    if a < b:
+        print("Ordre croissant : OUI")
+    else:
+        print("Ordre croissant : NON")
+
 
 
 
