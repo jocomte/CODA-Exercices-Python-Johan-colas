@@ -40,6 +40,15 @@ def exercice7():
     resultat= mult(nombre1,nombre2) 
     print(resultat)
 
+def div(a,b):
+    return a/b
+def exercice8():
+    nombre1= int(input("Entrez le premier nombre à calculer: "))
+    nombre2 =int(input("Entrez le second nombre à calculer: "))
+    resultat= div(nombre1,nombre2) 
+    print(resultat)
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -57,6 +66,8 @@ def main():
         exercice6()
     if choix == "7":
         exercice7()
+    if choix == "8":
+        exercice8()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
