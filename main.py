@@ -69,6 +69,15 @@ def exercice11():
     resultat=moitié(nombre)
     print(resultat)
 
+def exercice12():
+    message = input ('Entrez un message: ')
+    print(f'{message}\n{message}\n{message}\n{message}\n{message}')
+
+def exercice13():
+    n=0
+    for i in range(n+1,6):
+        print (i)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -95,6 +104,11 @@ def main():
         exercice10()
     if choix == "11":
         exercice11()
+    if choix == "12":
+        exercice12()
+    if choix == "13":
+        exercice13()
+
     
     else:
         print("Exercice non reconnu.")
