@@ -111,52 +111,41 @@ def exercice20():
     nom=input("Entrez votre nom: ")
     age=int(input("Entrez votre âge: "))
     print(f'Bonjour mon cher {nom}, vous avez actuellement {age} ans si je ne me trompes pas.')
+
+def exercice21():
+    nombre=int(input('Entrez votre nombre: '))
+    if nombre==0:
+        print('Le nombre est nul')
+    elif nombre>0:
+        print('Le nombre est positif')
+    else:
+        print('Le nombre est négatif')    
+
+def exercice22():
+    age=int(input("Entrez votre âge: "))
+    if age<18:
+        print('Vous êtes mineur')
+    else:
+        print('Vous êtes majeur')
+
+def exercice23():
+    note=int(input("Entrez votre note: "))
+    if note<10:
+        print('Non validé')
+    else:
+        print('Validé')
+
+
+
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "1":
-        exercice1()
-    if choix == "2":
-        exercice2()
-    if choix == "3":
-        exercice3()
-    if choix == "4":
-        exercice4()
-    if choix == "5":
-        exercice5()
-    if choix == "6":
-        exercice6()
-    if choix == "7":
-        exercice7()
-    if choix == "8":
-        exercice8()
-    if choix == "9":
-        exercice9()
-    if choix == "10":
-        exercice10()
-    if choix == "11":
-        exercice11()
-    if choix == "12":
-        exercice12()
-    if choix == "13":
-        exercice13()
-    if choix == "14":
-        exercice14()
-    if choix == "15":
-        exercice15()
-    if choix == "16":   
-        exercice16()
-    if choix == "17":   
-        exercice17()
-    if choix == "18":   
-        exercice18()
-    if choix == "19":   
-        exercice19()
-    if choix == "20":   
-        exercice20()
-    
+    nom_fonction = f"exercice{choix}"
+    if nom_fonction in globals():
+        globals()[nom_fonction]()
 
-    
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
