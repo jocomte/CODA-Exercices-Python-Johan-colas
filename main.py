@@ -48,6 +48,12 @@ def exercice8():
     resultat= div(nombre1,nombre2) 
     print(resultat)
 
+def carré(a):
+    return a**2
+def exercice9():
+    nombre=int(input("Entrez votre nombre à mettre au carré: " ))
+    resultat=carré(nombre)
+    print(resultat)
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -68,6 +74,8 @@ def main():
         exercice7()
     if choix == "8":
         exercice8()
+    if choix == "9":
+        exercice9()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
