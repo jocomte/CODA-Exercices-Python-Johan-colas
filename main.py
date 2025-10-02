@@ -2,6 +2,15 @@
 def exercice1():
     print("Exercice 1 : Bonjour le monde !")
     print("Hello World !")
+
+
+
+
+
+
+
+
+
 def main():
 # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
