@@ -32,7 +32,13 @@ def exercice6():
     resultat= Sous(nombre1,nombre2) 
     print(resultat)
 
-
+def mult(a,b):
+    return a*b
+def exercice7():
+    nombre1= int(input("Entrez le premier nombre à calculer: "))
+    nombre2 =int(input("Entrez le second nombre à calculer: "))
+    resultat= mult(nombre1,nombre2) 
+    print(resultat)
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -49,6 +55,8 @@ def main():
         exercice5()
     if choix == "6":
         exercice6()
+    if choix == "7":
+        exercice7()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
