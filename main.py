@@ -78,6 +78,24 @@ def exercice13():
     for i in range(n+1,6):
         print (i)
 
+def exercice14():
+    for i in range(1, 6):  
+        print(f"2 × {i} = {2 * i}")
+
+def exercice15():
+    cote=int(input("Entrez la longueur du côté du carré: "))
+    perimetre=cote*4
+    print(f'Le périmètre du carré est de {perimetre} ')
+
+def exercice16():
+    cote=int(input("Entrez la longueur du côté du carré: "))
+    aire=cote*cote
+    print(f'L\'aire du carré est de {aire} ')
+
+def exercice17():
+    euro=int(input("Entrez le montant en euros à convertir: "))
+    dollar=euro*1.1
+    print(f'Le montant en dollars est de {dollar} $')
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -108,6 +126,14 @@ def main():
         exercice12()
     if choix == "13":
         exercice13()
+    if choix == "14":
+        exercice14()
+    if choix == "15":
+        exercice15()
+    if choix == "16":   
+        exercice16()
+    if choix == "17":   
+        exercice17()
 
     
     else:
