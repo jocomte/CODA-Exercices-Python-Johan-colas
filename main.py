@@ -97,6 +97,11 @@ def exercice17():
     dollar=euro*1.1
     print(f'Le montant en dollars est de {dollar} $')
 
+def exercice18():
+    temps=int(input("Entrez le temps en minutes à convertir: "))
+    secondes=temps*60
+    print(f'Le temps en secondes est de {secondes} s')
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -134,6 +139,9 @@ def main():
         exercice16()
     if choix == "17":   
         exercice17()
+    if choix == "18":   
+        exercice18()
+    
 
     
     else:
