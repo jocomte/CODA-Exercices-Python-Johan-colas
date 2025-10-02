@@ -62,6 +62,13 @@ def exercice10():
     resultat=double(nombre)
     print(resultat)
 
+def moitié(a):
+    return a/2
+def exercice11():
+    nombre=int(input("Entrez votre nombre à diviser par 2: " ))
+    resultat=moitié(nombre)
+    print(resultat)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -86,6 +93,9 @@ def main():
         exercice9()
     if choix == "10":
         exercice10()
+    if choix == "11":
+        exercice11()
+    
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
