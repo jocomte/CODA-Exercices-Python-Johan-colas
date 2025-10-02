@@ -102,6 +102,15 @@ def exercice18():
     secondes=temps*60
     print(f'Le temps en secondes est de {secondes} s')
 
+def exercice19():
+    prix_ht=float(input("Entrez le prix hors taxe: "))
+    tva=prix_ht+prix_ht*0.2
+    print(f'Le prix ttc est de {tva} €')
+
+def exercice20():
+    nom=input("Entrez votre nom: ")
+    age=int(input("Entrez votre âge: "))
+    print(f'Bonjour mon cher {nom}, vous avez actuellement {age} ans si je ne me trompes pas.')
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -141,6 +150,10 @@ def main():
         exercice17()
     if choix == "18":   
         exercice18()
+    if choix == "19":   
+        exercice19()
+    if choix == "20":   
+        exercice20()
     
 
     
