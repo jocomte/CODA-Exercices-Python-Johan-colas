@@ -55,6 +55,14 @@ def exercice9():
     resultat=carré(nombre)
     print(resultat)
 
+def double(a):
+    return a*2
+def exercice10():
+    nombre=int(input("Entrez votre nombre à doubler: " ))
+    resultat=double(nombre)
+    print(resultat)
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -76,6 +84,8 @@ def main():
         exercice8()
     if choix == "9":
         exercice9()
+    if choix == "10":
+        exercice10()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
