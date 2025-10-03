@@ -151,9 +151,21 @@ def exercice25():
     else:
         print("Ordre croissant : NON")
 
+def exercice26():
+    nombre=int(input("Entrez un nombre :"))
+    if nombre % 5 == 0:
+        print (f"{nombre} est un multiple de 5")
+    else:
+        print(f"{nombre} n'est pas un multiple de 5")
 
-
-
+def exercice27():
+    nombre =int(input("Entrez votre âge: "))
+    if nombre<12:
+        print('Vous êtes un enfant')
+    elif 12<=nombre<18:
+        print('Vous êtes un adolescent')
+    else:
+        print('Vous êtes un adulte')
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
