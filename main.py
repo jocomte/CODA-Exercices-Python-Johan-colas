@@ -167,6 +167,26 @@ def exercice27():
     else:
         print('Vous êtes un adulte')
 
+def exercice28():
+    temperature=int(input("Entrez la température de l'eau: "))
+    if temperature<0:
+        print ("L'eau est de la glace")
+    elif 0<=temperature<100:
+        print("L'eau est liquide")
+    else:
+        print("L'eau est de la vapeur")
+    
+def exercice29():
+    note_bac=int(input("Entrez votre note au bac: "))
+    if 0<=note_bac<10:
+        print('Recalé')
+    elif 10<=note_bac<12:
+        print('Passable')
+    elif 12<=note_bac<16:
+        print('Bien')
+    else:
+        print('Très bien')
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
