@@ -237,6 +237,42 @@ def exercice37():
         etoiles = 2 * i - 1            
         print(" " * espaces + "*" * etoiles)
 
+def exercice38():
+
+    print("Menu des opérations :")
+    print("1. Addition (+)")
+    print("2. Soustraction (-)")
+    print("3. Multiplication (×)")
+    print("4. Division (÷)")
+
+    choix = input("Choisissez une opération (1/2/3/4) : ")
+
+    a = float(input("Entrez le premier nombre : "))
+    b = float(input("Entrez le deuxième nombre : "))
+
+    if choix == "1":
+        resultat = Add(a, b)
+        operateur = "+"
+    elif choix == "2":
+        resultat = Sous(a, b)
+        operateur = "-"
+    elif choix == "3":
+        resultat = mult(a, b)
+        operateur = "×"
+    elif choix == "4":
+        if b != 0:
+            resultat = div(a, b)
+            operateur = "÷"
+        else:
+            print("Erreur : division par zéro !")
+            resultat = None
+    else:
+        print("Choix invalide")
+        resultat = None
+    if resultat is not None:
+        print(f"{a} {operateur} {b} = {resultat}")
+
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
