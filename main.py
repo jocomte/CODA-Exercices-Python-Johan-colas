@@ -188,13 +188,15 @@ def exercice29():
         print('Très bien')
 
 def compteur(n):
-    for i in range(1, n + 1):
-        print(i, end=" ")
+    return list(range(1,n+1))
 
 def exercice30():
     n=int(input ("Entrez un nombre: "))
     compteur(n)
-    
+
+def exercice31():
+    n=int(input("Entrez un nombre: "))
+    print (compteur(n)[::-1])
 
     
 
