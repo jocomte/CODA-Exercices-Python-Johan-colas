@@ -272,6 +272,23 @@ def exercice38():
     if resultat is not None:
         print(f"{a} {operateur} {b} = {resultat}")
 
+def exercice39():
+    import random
+    nombre_secret = random.randint(1,100)
+    choix=input("Le nombre secret est pair ou impair :")
+    if nombre_secret % 2 == 0:
+        print("Le nombre secret est pair.")
+        if choix.lower() == "pair":
+            print("Vous avez gagné !")
+        else:
+            print("Vous avez perdue !")
+    else:
+        print("Le nombre secret est impair.")
+        if choix.lower() == "impair":
+            print("Vous avez gagné !")
+        else:
+            print("Vous avez perdue !")
+
 
 
 def main():
