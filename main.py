@@ -1,3 +1,9 @@
+def exercice40():
+    mdp = input("Entrez votre mot de passe : ")
+    if len(mdp) > 6:
+        print("Mot de passe valide.")
+    else:
+        print("Mot de passe trop court, il doit contenir plus de 6 caractères.")
 def exercice1():
     print("Exercice 1 : Bonjour le monde !")
     print("Hello World !")
@@ -289,6 +295,12 @@ def exercice39():
         else:
             print("Vous avez perdue !")
 
+def exercice40():
+    mdp = input("Entrez un mot de passe : ")
+    if len(mdp) >= 6:
+        print("Valide")
+    else:
+        print("Trop court")
 
 
 def main():
