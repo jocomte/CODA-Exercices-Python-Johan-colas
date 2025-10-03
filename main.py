@@ -198,6 +198,19 @@ def exercice31():
     n=int(input("Entrez un nombre: "))
     print (compteur(n)[::-1])
 
+def exercice32():
+    N = int(input("Entrez un nombre N : "))
+    somme = 0
+    for i in range(1, N + 1):
+        somme += i
+    print(f"La somme de 1 à {N} est {somme}")
+    
+def exercice33():
+    nombre=int(input("Entrez un nombre entre 1 et 10: "))
+    for i in range(1,11):
+        resultat=nombre*i
+        print(f'{nombre} x {i} = {resultat}')
+
     
 
 def main():
