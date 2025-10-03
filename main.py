@@ -222,7 +222,21 @@ def exercice35():
     while i * i <= n:
         print(i * i, end=" ")
         i += 1
-    
+
+def exercice36():
+    mot=input("Entrez un mot: ")
+    n=int(input("Entrez le nombre de fois que voulez répéter le mot: "))
+    for i in range(n):
+        print(mot)    
+
+def exercice37():
+    hauteur = int(input("Entrez la hauteur de la pyramide : "))
+
+    for i in range(1, hauteur + 1):
+        espaces = hauteur - i          
+        etoiles = 2 * i - 1            
+        print(" " * espaces + "*" * etoiles)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
