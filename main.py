@@ -187,6 +187,17 @@ def exercice29():
     else:
         print('Très bien')
 
+def compteur(n):
+    for i in range(1, n + 1):
+        print(i, end=" ")
+
+def exercice30():
+    n=int(input ("Entrez un nombre: "))
+    compteur(n)
+    
+
+    
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
