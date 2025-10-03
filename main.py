@@ -211,6 +211,17 @@ def exercice33():
         resultat=nombre*i
         print(f'{nombre} x {i} = {resultat}')
 
+def exercice34():
+    n = int(input("Entrez un nombre : "))
+    pairs = [x for x in [0] + compteur(n) if x % 2 == 0]
+    print(*pairs)    
+
+def exercice35():
+    n=int(input("Entrez un nombre: "))
+    i = 1
+    while i * i <= n:
+        print(i * i, end=" ")
+        i += 1
     
 
 def main():
